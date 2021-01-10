@@ -23,7 +23,7 @@ Il modulo apre una connessione verso *pesscloud.com* all'indirizzo 51.255.163.83
 
 ### Password gestite in chiaro
 
-Con un semplice *Men in The Middle* è possibile recuperare l'intera sessione di comunicazione tra l'applicazione e la centralina, in cui c'è evidenza della password in chiaro (nel rettangolo rosso).
+Con un semplice *Man in The Middle* è possibile recuperare l'intera sessione di comunicazione tra l'applicazione e la centralina, in cui c'è evidenza della password in chiaro (nel rettangolo rosso).
 
 ![](images/TCPstream_locale.png)
 
@@ -33,7 +33,7 @@ Nel rettangolo blu alla riga 0x0EC è indicato se l'allarme è disattivato (0x00
 
 ### Il sistema cloud
 
-Il server *pesscloud.com* di fatto rigira solo il flusso dati dalla porta RS232 della centralina verso il cellullare connesso anche se fuori dalla rete locale, qualsiasi interazione fatta in locale può essere effettuata in remoto. Anche in questo caso, con un *Men in The Middle* è possibile recuperare tutti i dati di accesso, per poter poi accedere al sistema antifurto da remoto.
+Il server *pesscloud.com* di fatto rigira solo il flusso dati dalla porta RS232 della centralina verso il cellullare connesso anche se fuori dalla rete locale, qualsiasi interazione fatta in locale può essere effettuata in remoto. Anche in questo caso, con un *Man in The Middle* è possibile recuperare tutti i dati di accesso, per poter poi accedere al sistema antifurto da remoto.
 
 ![](images/HTTPsteam_cloud.png)
 ![](images/TCPstream_cloud.png)
